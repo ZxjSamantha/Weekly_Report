@@ -34,3 +34,5 @@ Contributions:
 
 2. cropped training can increase the decoding accuracy
 
+one EEG data set per subject $i$ 
+
