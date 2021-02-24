@@ -52,3 +52,14 @@ workflow:
 
 6. classification: A classifier is trained to predict per-trial labels based on the feature vectors. 
 
+Input representation: how to represent input $ X^j $
+
+To represent the EEG as a time series of topographically organized images, i.e., of the voltage distributions across the flattened scalp surface. Unmixing of these global patterns using a number of spatial filters is therefore typically applied to the whole set of relevant electrodes as a basic step in many successful examples of EEG decoding. 
+
+ConvNets are designed in a way that they can learn spatially global unmixing filters in the entrance layers, as well as temporal hierarchies of local and global modulations in the deeper architectures. 
+
+The input will be represented as a 2D-array with **the number of time steps as the width** and **the number of electrodes as the height**. This approach significantly reduced the input dimensionality compared with the "EEG-as-an-image" approach. 
+
+The first convolutional block was split into two convolutional layers in order to better handle the large number of input channels, **one input channel per electrode compared to three input channels (one per color) in rgb-images**.
+
+The convolution was split into a first convolution across time and a second convolution across spcace (electrodes); each filter in these steps has weights for all electrodes (like a CSP spatial filter) and for the filters of the preceding temporal convolution (like any standard intermediate convolutional layer). 
