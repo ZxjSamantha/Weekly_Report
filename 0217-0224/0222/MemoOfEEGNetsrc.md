@@ -36,3 +36,19 @@ Contributions:
 
 one EEG data set per subject $i$ 
 
+benchmark of this work: FBCSP
+
+workflow:
+
+1. Bandpass filtering: different bandpass filters are applied to separate the raw EEG signals into different frequency bands. 
+
+2. epoching: the continuous EEG signal is cut into trials 
+
+3. CSP computation: per frequency band, the common spatial patterns algorithm is applied to extract spatial filters. CSP aims to extract spatial filters that make the trials discriminable by the power of the spatially filtered trial signal. 
+
+4. spatial filtering: the spatial filters computed in Step 2 are applied to the EEG signal
+
+5. feature construction: feature vectors are the log-variance of the spatially filtered trial signal for each frequency band and for each spatial filter. 
+
+6. classification: A classifier is trained to predict per-trial labels based on the feature vectors. 
+
