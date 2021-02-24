@@ -63,3 +63,27 @@ The input will be represented as a 2D-array with **the number of time steps as t
 The first convolutional block was split into two convolutional layers in order to better handle the large number of input channels, **one input channel per electrode compared to three input channels (one per color) in rgb-images**.
 
 The convolution was split into a first convolution across time and a second convolution across spcace (electrodes); each filter in these steps has weights for all electrodes (like a CSP spatial filter) and for the filters of the preceding temporal convolution (like any standard intermediate convolutional layer). 
+
+ConvNet architectures and design choice:
+
+Input representation
+
+Deep ConvNet for raw EEG signals
+
+Shallow ConvNet for raw EEG signals
+
+Design choices for deep and shallow ConvNet
+
+Hybrid ConvNet
+
+Residual ConvNet 
+
+ConvNet training:
+
+Input and labels
+
+Trial-wise training 
+
+Cropped training 
+
+Optimization and early stopping 
