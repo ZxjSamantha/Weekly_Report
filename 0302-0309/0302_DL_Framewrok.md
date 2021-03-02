@@ -114,6 +114,8 @@ with tf.Session() as sess:
 ```
 Problem 2: loss not going down! Assign calls not actually being executed. 
 
+Tensorflow: Optimizer
+
 
 
 
