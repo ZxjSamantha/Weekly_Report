@@ -1,5 +1,11 @@
 # Find the duplicated number in a given array
 
+## Related: 
+
+[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)
+
+[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+
 ## Approach 1: Sorting 
 
 ```
