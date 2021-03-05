@@ -2,6 +2,8 @@ Textbook: [Problem Solving with Python](https://runestone.academy/runestone/book
 
 Algorithm [Code for Lectures](https://algs4.cs.princeton.edu/code/)
 
+Google Dev [Tech Guide with Google](https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/)
+
 - Lecture slides
 - Download code
 - Summary of content 
