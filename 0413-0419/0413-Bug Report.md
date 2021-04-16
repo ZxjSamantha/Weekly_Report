@@ -28,3 +28,5 @@ Traceback (most recent call last):
   File "/home/xinjie/anaconda3/envs/tf/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 1657, in _create_c_op
     raise ValueError(str(e))
 ValueError: Dimensions must be equal, but are 20 and 501 for '{{node lambda_2/sub}} = Sub[T=DT_FLOAT](lambda/Identity, lambda_1/Identity)' with input shapes: [?,1,94,20], [?,1,94,501].
+
+Problem happens at training tailored decoder.
