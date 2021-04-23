@@ -16,3 +16,9 @@ Training of the model is done in run_nn_models.py
 Modification in run_nn_models.py:
 
 line 44: `Samples = X_train.shape[-1]` -> `Samples = X_train.shape`
+
+New bug:
+```
+tensorflow.python.framework.errors_impl.InvalidArgumentError:  Default AvgPoolingOp only supports NHWC on device type CPU
+	 [[node model/average_pooling2d/AvgPool (defined at /home/xinjie/xinjie/HTNet/HTNet_generalized_decoding/run_nn_models.py:67) ]] [Op:__inference_train_function_1732]
+```
