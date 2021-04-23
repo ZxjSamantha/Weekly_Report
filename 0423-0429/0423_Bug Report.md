@@ -22,3 +22,9 @@ New bug:
 tensorflow.python.framework.errors_impl.InvalidArgumentError:  Default AvgPoolingOp only supports NHWC on device type CPU
 	 [[node model/average_pooling2d/AvgPool (defined at /home/xinjie/xinjie/HTNet/HTNet_generalized_decoding/run_nn_models.py:67) ]] [Op:__inference_train_function_1732]
 ```
+
+nvidia failed
+
+[Solution](https://qiita.com/ell/items/be3d3527b723f70f888d)
+
+重启！
