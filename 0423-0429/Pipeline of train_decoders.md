@@ -107,13 +107,21 @@ parameters of run_nn_models:
 
 ---
 
-8. unseen modality testing 
+8. Same modality training
 
-models: 
+run_nn_models()
 
 ---
 
-9. Same modality fine-tuning
+9. unseen modality testing 
+
+unseen_modality_test()
+
+---
+
+10. Same modality fine-tuning
+
+transfer_learn_nn()
 
 ```
 for j, curr_layer in enumerate(layers_to_finetune)
@@ -149,11 +157,13 @@ epochs: training epochs
 
 ---
 
-10. Unseen modality fine-tune
+11. Unseen modality fine-tuning
+
+**transfer_learn_nn_eeg**
 
 ---
 
-11. Training same modality decoders with different numbers of training participants
+12. Training same modality decoders with different numbers of training participants
 
 run_nn_models: 
 
@@ -201,10 +211,10 @@ run_nn_models:
   
 ---
 
-12. Combine results into dataframes
+13. Combine results into dataframes
 
 Two functions: ntrain_combine_df, frac_combine_df
 
 ---
 
-13. Pre-compute difference spectrograms for ECoG and EEG datasets 
+14. Pre-compute difference spectrograms for ECoG and EEG datasets 
