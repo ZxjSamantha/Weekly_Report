@@ -13,9 +13,6 @@ input1 = Input(shape = (1, Chans, Samples))
 
 Training of the model is done in run_nn_models.py
 
-Modification in run_nn_models.py:
-
-line 44: `Samples = X_train.shape[-1]` -> `Samples = X_train.shape`
 
 line 79: if val == relative_power 时，do_log = True
 
@@ -24,6 +21,9 @@ In htnet()
 ```
 if useHilbert:
     if compute_val == 'relative_power':
+    	X1 = Lambda(apply_hilbert_tf, arguments = {'do_log':True, 'compute_val':'power'})(block1)
+	X2 = AveragePooling2D((1, X1.shape[-1]//base_split), data_format = 'channels_last')(X1)
+        X2 = Lambda(lambda x: tf.tile(x[...,:1],tf.constant([1,1,1,Samples], dtype=tf.int32)))(X2)
 	block1 = Lambda(lambda inputs: inputs[0] - inputs[1])([X1, X2])
 ```
 
