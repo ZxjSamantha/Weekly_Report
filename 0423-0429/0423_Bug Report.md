@@ -17,6 +17,20 @@ Modification in run_nn_models.py:
 
 line 44: `Samples = X_train.shape[-1]` -> `Samples = X_train.shape`
 
+line 79: if val == relative_power 时，do_log = True
+
+In htnet()
+
+```
+if useHilbert:
+    if compute_val == 'relative_power':
+	block1 = Lambda(lambda inputs: inputs[0] - inputs[1])([X1, X2])
+```
+
+
+
+---
+
 New bug:
 ```
 tensorflow.python.framework.errors_impl.InvalidArgumentError:  Default AvgPoolingOp only supports NHWC on device type CPU
