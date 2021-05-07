@@ -32,3 +32,36 @@ For HTNet and EEGNet: 6 parameters, [temporal kernel length, separable kernel le
 For random forest decoder: 2 parameters, [maximum distance, number of estimators]
 
 For minimum distance decoder: no parameters
+
+---
+
+Hyperparameter selection trials: 
+
+Random forest parameter: 25 runs
+
+HTNet/EEGNet: 100 runs 
+
+---
+Evaluation: 
+
+Metric: validation accuracy (averaged by 36 folds for same-modality-and-same-subject decoder, 12 folds for multi-participants-same-modality).
+
+---
+
+Fine-tune
+
+The pretrained same and unseen modality decoders are fine-tuned using a portion of the test participant's data. 
+
+In two ways:
+
+Each HTNet convolutional layer is fine-tuned separately. The nearby batchnor malization layer is also trained and notably boosted performance. 
+
+All layers are fine-tuned together. 
+
+The amount of training/validation data available is varied as well.
+
+---
+
+2.8 Comparing performance of HTNet spectral measures. 
+
+4 re-trained models per fold. (36 or 12) 
