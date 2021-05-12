@@ -71,7 +71,8 @@ Input: EEG data
 
 Output: class label vector
 
-It is required to remove EOG artifacts before the subsequent data processing using artifact removal techniques.
+It is required to remove EOG artifacts before the subsequent data processing using artifact removal techniques such as highpass filtering or linear regression. 
+
 
 
 
