@@ -1,7 +1,7 @@
 
-1. # of subject: 9
+1. number of subject: 9
 
-2. # of motor imagery tasks: 4
+2. number of motor imagery tasks: 4
 
 class 1: movement of left hand, 
 
@@ -11,11 +11,11 @@ class 3: movement of both feet,
 
 class 4: tongue 
 
-3. # of sessions: 2, on different days, for each subject
+3. number of sessions: 2, on different days, for each subject
 
-4. # of runs per session: 6
+4. number of runs per session: 6
 
-5. # of trials per run: 48 (12 for each of the four classes) 
+5. number of trials per run: 48 (12 for each of the four classes) 
 
 (48 * 6 = 288 trials per session for each subject) 
 
