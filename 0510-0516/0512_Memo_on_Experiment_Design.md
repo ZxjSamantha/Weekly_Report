@@ -27,3 +27,5 @@ Q3. What kinds of work can be further researched?
 6. Sliding window with CSP(Hilbert transform?) 
 
 7. Design experiments to collect data (points will be the originality of the experiment design) 
+
+8. Time domain, frequency domain features. 
