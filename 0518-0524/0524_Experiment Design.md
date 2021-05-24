@@ -6,7 +6,7 @@
 
 ### Baseline + Evaluation Criterion
 
-70 $\pm$ 15 ?
+$70 \pm 15$ ?
 
 // Kullback-Leibler (KL) divergence 
 
