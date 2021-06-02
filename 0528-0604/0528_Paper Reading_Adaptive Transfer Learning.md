@@ -23,3 +23,5 @@
 3. Online pre-alignment strategy based on **Riemannian Procrustes Analysis** （RPA), TL benefits for both DL and ML.  
 
 4. **Mainfold Embedded Knowledge Transfer (MEKT)** with a combination of alignment, feature extraction, and domain adaptation techniques to produce projection matrices that minimize the joint probability distribution shift between the source and the target domains. 
+
+5. Number of features, 
