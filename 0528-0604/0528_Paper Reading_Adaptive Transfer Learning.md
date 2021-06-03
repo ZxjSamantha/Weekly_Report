@@ -31,3 +31,7 @@
 Learning rates & Scheme: 
 
 
+---
+
+Transformer on MI?
+
