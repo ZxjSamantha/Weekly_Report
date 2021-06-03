@@ -8,7 +8,7 @@
 
 - Subject-specific classfication: Train and validate a model for each subject using only the same subject's data. 
 
-- Subject-independent classification: Leave-one-subejct-out(LOSO) paradigm for evaluation. 
+- Subject-independent classification: **Leave-one-subejct-out(LOSO)** paradigm for evaluation. 
 
 ## Goal: Leverage the features extracted from the convolution filters in the model and adapt the classifier to a subject it has never encountered. 
 
@@ -24,4 +24,10 @@
 
 4. **Mainfold Embedded Knowledge Transfer (MEKT)** with a combination of alignment, feature extraction, and domain adaptation techniques to produce projection matrices that minimize the joint probability distribution shift between the source and the target domains. 
 
-5. Number of features, 
+5. Number of features?
+
+6. Different learning rates can have an impact on the final classification accuracy. 
+
+Learning rates & Scheme: 
+
+
