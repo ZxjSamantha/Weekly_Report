@@ -1,3 +1,5 @@
+## Reproduction of [Fast and Accurate Multiclass Inference for MI-BCIs Using Large Multiscale Temporal and Spectral Features](https://arxiv.org/abs/1806.06823)
+
 ".mat" format data of BCI Competition IV 2a can be found here [BCI datasets](http://bnci-horizon-2020.eu/database/data-sets)
 
 ---
