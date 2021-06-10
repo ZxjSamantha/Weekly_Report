@@ -1,3 +1,5 @@
+# Small-sample learning? Zero-shot learning? 
+
 # Source code reading of EEGNet
 
 2 key questions:
