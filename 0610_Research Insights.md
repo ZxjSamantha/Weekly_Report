@@ -1,5 +1,9 @@
 # Small-sample learning? Zero-shot learning? 
 
+# Computational Motor Imagery?
+
+# IV-2a methods on GigaDB dataset? GigaDB methods on IV-2a dataset?
+
 # Source code reading of EEGNet
 
 2 key questions:
