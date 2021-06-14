@@ -1,10 +1,16 @@
-# Small-sample learning? Zero-shot learning? 
+## Using *Braindecode* construct a model quickly 
 
-# Computational Motor Imagery?
+## compare with other transfer learning methods? compare with non-transfer learning methods?
 
-# IV-2a methods on GigaDB dataset? GigaDB methods on IV-2a dataset?
+## with or without pre-training? 
 
-# Source code reading of EEGNet
+## Small-sample learning? Zero-shot learning? 
+
+## Computational Motor Imagery?
+
+## IV-2a methods on GigaDB dataset? GigaDB methods on IV-2a dataset?
+
+## Source code reading of EEGNet
 
 2 key questions:
 
