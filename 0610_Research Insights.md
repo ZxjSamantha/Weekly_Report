@@ -1,3 +1,5 @@
+## One large dataset for training the network and one small dataset for fine-tune?  
+
 ## Using *Braindecode* construct a model quickly 
 
 ## compare with other transfer learning methods? compare with non-transfer learning methods?
