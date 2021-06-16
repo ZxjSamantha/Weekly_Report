@@ -15,3 +15,5 @@ Classification results are reported for two sets of analysis: within-subject and
   **Note**: They never use the test subjects' training dat. This process is repeated  10 times for each subject, creating 90 different folds. The mean and standard error of classification performance were calculated over the 90 folds. 
   
 - class-weight to the loss function whenever the data is imbalanced. 
+
+- Cross-subject classification results for the SMR dataset are fount no significant difference in performance across all CNN-based models. All CNN-based models perform similarly, while slightly outperforming FBCSP. 
