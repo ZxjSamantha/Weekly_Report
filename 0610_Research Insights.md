@@ -1,3 +1,5 @@
+## Ensemble learning??? Spectral Transfer learning using Geometry Information
+
 ## One large dataset for training the network and one small dataset for fine-tune?  
 
 ## Using *Braindecode* construct a model quickly 
