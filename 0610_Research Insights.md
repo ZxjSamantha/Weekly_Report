@@ -1,3 +1,5 @@
+## minimum number of subjects to predict an unseen subject?
+
 ## cross-paradigm? subjects/sessions/devices/tasks
 
 ## Ensemble learning??? Spectral Transfer learning using Geometry Information
