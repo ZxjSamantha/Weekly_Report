@@ -1,3 +1,5 @@
+## cross-paradigm? subjects/sessions/devices/tasks
+
 ## Ensemble learning??? Spectral Transfer learning using Geometry Information
 
 ## One large dataset for training the network and one small dataset for fine-tune?  
