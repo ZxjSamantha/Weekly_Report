@@ -17,3 +17,7 @@ deep4model.compile(loss=criterion, optimizer=optimizer, iterator_seed=1, )
 
 [绘制条形图](https://zhuanlan.zhihu.com/p/25128216)
 
+---
+
+[Read gdf](https://www.programmersought.com/article/31122630428/)
+
