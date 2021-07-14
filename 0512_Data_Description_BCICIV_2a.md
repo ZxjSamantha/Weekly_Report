@@ -15,7 +15,7 @@ class 4: tongue
 
 4. number of runs per session: 6
 
-5. number of trials per run: 48 (12 for each of the four classes) 
+5. number of trials per run: 48 (**12** for each of the four classes) 
 
 (48 * 6 = 288 trials per session for each subject) 
 
