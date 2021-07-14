@@ -63,9 +63,13 @@ The class labels are only provided for the training data and not for the testing
 
 ---
 
-A continuous classification output for each sample in the form of class labels (1, 2, 3, 4), including trials and trials marked as artifact. 
+**A continuous classification output** for each sample in the form of class labels (1, 2, 3, 4), including trials and trials marked as artifact. 
 
 **A confusion matrix** will be built from all artifact-free trials for **each time point**.
+
+predict?
+
+From these confusion matrices, the time course of the accuracy as well as the kappa coefficient will be obtained. 
 
 Input: EEG data 
 
