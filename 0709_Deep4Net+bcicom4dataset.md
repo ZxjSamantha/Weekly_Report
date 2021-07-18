@@ -3,7 +3,21 @@ DeepConvNets Training:
 
 - Trial-wise training 
 
-For each trial, the trial signal is used as input and the corresponding trial label
+For each trial, the trial signal is used as input and the corresponding trial label asa target to train the ConvNet. 
+
+- Cropped training
+
+The cropped training strategy uses crops, i.e., sliding input windows within the trial, which leads to many more training examples for the network than the trial-wise training strategy. 
+
+Overall, this resulted in 625 crops and therefore 625 label predictions per trial. The mean of these 625 predictions is used as the final prediction for the trial during the test phase. --> Cropped training increases the training set size by a factor of 625. 
+
+The cropped training method leads to a new hyperparameter: the number of crops that are processed at the same time. 
+
+The larger the number of crops, the larger the speedup one can get. 
+
+---
+
+
 
 ---
 
