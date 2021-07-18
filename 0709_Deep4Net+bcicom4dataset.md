@@ -1,3 +1,12 @@
+
+DeepConvNets Training:
+
+- Trial-wise training 
+
+For each trial, the trial signal is used as input and the corresponding trial label
+
+---
+
 [可借鉴的训练过程](https://robintibor.github.io/braindecode/notebooks/Trialwise_Decoding.html)
 
 ---
