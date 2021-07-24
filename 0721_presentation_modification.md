@@ -1,3 +1,13 @@
+## Transfer Learning for Motor Imagery Based Brain-Computer Interfaces: A Complete Pipeline 
+
+Insights:
+
+1. Data alignment component before spatial filtering is very important to the TL performance, for both (ML and DL, offline and online, cross-subject and cross-session). 
+
+2. **Binary classification** 
+
+---
+
 ## Make the plans in the timeline. (What would you do in the comming 5 months, what should you achieve in the next and next stage? ) 
 
 ---
