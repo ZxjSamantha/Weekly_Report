@@ -2,7 +2,7 @@
 
 把学习到的特征分为general features（一般来说，网络的前几层）和specific features（网络的后几层）.对于一个神经网络来说：
 
-1. 哪几层学到的是general features? 那基层学到的是specific features？
+1. 哪几层学到的是general features? 哪几层学到的是specific features？
 
 2. (previous works) 如何决定迁移哪些层? 如何固定哪些层？
 
