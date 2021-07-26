@@ -1,3 +1,19 @@
+## How to transfer in deep learning models?
+
+把学习到的特征分为general features（一般来说，网络的前几层）和specific features（网络的后几层）.对于一个神经网络来说：
+
+1. 哪几层学到的是general features? 那基层学到的是specific features？
+
+2. (previous works) 如何决定迁移哪些层? 如何固定哪些层？
+
+3. 如何fine-tune?
+
+如何网络的浅层学到的特征是通用的，在一个网络中，task-specific 的层如何适配?
+
+MMD: 计算源域和目标域的距离，把该项加入网络的损失进行训练。
+
+---
+
 ## Transfer Learning for Motor Imagery Based Brain-Computer Interfaces: A Complete Pipeline 
 
 Insights:
