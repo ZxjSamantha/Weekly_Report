@@ -12,6 +12,10 @@
 
 MMD: 计算源域和目标域的距离，把该项加入网络的损失进行训练。
 
+DDC： 分类层前一层加一层适配层，adaption layer. 
+
+DaNN: 多适配了几层特征，多核MMD替换单核MD。 
+
 ---
 
 ## Transfer Learning for Motor Imagery Based Brain-Computer Interfaces: A Complete Pipeline 
