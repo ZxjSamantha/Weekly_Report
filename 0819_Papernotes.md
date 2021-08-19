@@ -59,3 +59,13 @@ Besides the decoding performance, there are also other potential advantages of u
 ```
 
 training -> cross training strategies -> finetune (finetune strategies) 
+
+### Cropped training effect on accuracies
+
+`Cropped training was necessary for the deep ConvNet to reach competitive accuracies on the dataset excluding very low frequencies. The large increase in accuracy with cropped training for the deep network on the data might indicate a large number of training examples is necessary to learn to extract band power features. This makes sense as the shifted neighboring windows may contain the same, but shifted, oscillatory signals. These shifts could prevent the network from overfitting on phase information within the trial, which is less important in the higher than the lower frequencies. `
+
+### Visualize what ConvNets learn from the EEG data. 
+
+`The literature on using ConvNets for brain-signal decoding has visualized weights or outputs of ConvNet layers determined inputs that maximally activate specific convolutional filters. `
+
+
