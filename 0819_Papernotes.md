@@ -1,3 +1,7 @@
+`基于模型的迁移学习方法，即构建参数共享的模型。例如，SVM的权重参数、神经网络的参数等，都可以进行共享。由于神经网络的结构可以直接进行迁移，因此其使用频率非常高。神经网络最经典的pretrain-finetune就是模型参数迁移的很好的表现。`
+
+---
+
 ## MMD
 
 [Implementation of MMD](https://blog.csdn.net/sinat_34173979/article/details/105876584)
