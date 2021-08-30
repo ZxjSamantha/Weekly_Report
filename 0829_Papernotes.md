@@ -1,3 +1,12 @@
+`Conventional machine learning algorithms are composed of three steps: signal pre-processing, feature extraction, feature classification. 
+
+The signal pre-processing step's objective is to remove artifacts such as musclocular movement and system noises. 
+
+For feature classification, popular linear classifiers such as SVM and LDA are applied for MI classification. Most popular classification algorithms are linear, which is not suitable for non-stationary signal classification. 
+`
+
+---
+
 `基于模型的迁移学习方法，即构建参数共享的模型。例如，SVM的权重参数、神经网络的参数等，都可以进行共享。由于神经网络的结构可以直接进行迁移，因此其使用频率非常高。神经网络最经典的pretrain-finetune就是模型参数迁移的很好的表现。`
 
 ---
