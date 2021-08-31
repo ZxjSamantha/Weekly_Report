@@ -30,6 +30,18 @@ Most machine learning pipelines and BCIs not only use a classifier but also appl
 
 ---
 
+### Strategies of Transfer Learning 
+
+1. 预训练网络直接用于新任务
+
+2. 预训练+微调
+
+3. 预训练网络作为新任务的特征提取器，参考DeCAF
+
+4. 预训练提取特征加分类器构建
+
+---
+
 ### Experiments & Results
 
 ---
