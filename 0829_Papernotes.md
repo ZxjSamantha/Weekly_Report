@@ -1,3 +1,7 @@
+
+
+---
+
 `Conventional machine learning algorithms are composed of three steps: signal pre-processing, feature extraction, feature classification. 
 
 The signal pre-processing step's objective is to remove artifacts such as musclocular movement and system noises. 
