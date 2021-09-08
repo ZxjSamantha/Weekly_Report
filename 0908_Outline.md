@@ -22,6 +22,14 @@ Most machine learning pipelines and BCIs not only use a classifier but also appl
 
 ---
 
+### Methodology 
+
+1. Notation Definition 
+
+2. Network architecture 
+
+---
+
 ### Background of Deep Learning on BCI 
 
 ---
