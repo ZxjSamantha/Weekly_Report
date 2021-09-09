@@ -28,6 +28,12 @@ Most machine learning pipelines and BCIs not only use a classifier but also appl
 
 2. Network architecture 
 
+3. Weight Decay 
+
+L2正则化可能是最广泛使用的对参数化机器学习模型进行正则化的技术。
+
+泛化性和灵活性之间的基本权衡被描述为bias-variance tradeoff。
+
 ---
 
 ### Background of Deep Learning on BCI 
