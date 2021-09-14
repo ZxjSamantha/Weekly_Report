@@ -18,8 +18,6 @@ Most machine learning pipelines and BCIs not only use a classifier but also appl
 
 
 
-
-
 ---
 
 ### Methodology 
