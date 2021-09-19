@@ -1,12 +1,20 @@
-## minimum number of subjects to predict an unseen subject?
+1. 调整卷积窗口大小
 
-## cross-paradigm? subjects/sessions/devices/tasks
+2. 调整number of output channels
+
+3. number of convolution layer 
+
+4. number of fully-connected layer 
+
+5. learning rate, weights initialization, number of epochs. 
+
+---
+
+## minimum number of subjects to predict an unseen subject?
 
 ## Ensemble learning??? Spectral Transfer learning using Geometry Information
 
 ## One large dataset for training the network and one small dataset for fine-tune?  
-
-## Using *Braindecode* construct a model quickly 
 
 ## compare with other transfer learning methods? compare with non-transfer learning methods?
 
