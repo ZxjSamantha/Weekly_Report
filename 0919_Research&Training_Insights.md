@@ -1,3 +1,6 @@
+[Cropped Mannual Training](https://robintibor.github.io/braindecode/notebooks/Cropped_Manual_Training_Loop.html)
+---
+
 1. 调整卷积窗口大小
 
 2. 调整number of output channels
