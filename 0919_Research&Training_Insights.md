@@ -1,3 +1,19 @@
+### Feature extraction:
+
+Time domain
+
+Frequency domain 
+
+Time-frequency domain 
+
+Riemannian space
+
+functional brain connectivity features 
+
+---
+
+## 未完成
+
 [Cropped Mannual Training](https://robintibor.github.io/braindecode/notebooks/Cropped_Manual_Training_Loop.html)
 ---
 
