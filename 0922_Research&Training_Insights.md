@@ -1,3 +1,13 @@
+时间窗口的长度是怎么设计的？
+
+```
+time_windows_flt = np.array([[2.5, 3.5], [3,4], [3.5,4.5], [4,5], [4.5,5.5], [5,6], [2.5,4.5], [3,5], [3.5,5.5], [4,6], [2.5,6]])*self.fs
+# time windows in [s] * fs for using as a feature 
+self.time_windows = time_windows_flt.astype(int)
+```
+
+---
+
 ### Chap 9 
 
 深度网络的与训练-微调（pretrain-finetune) 可以节省训练时间，提高学习精度。但是预训练方法有其先天不足：它无法直接处理训练数据和测试数据分布不同的情况，并且，微调时需要有数据标注。
