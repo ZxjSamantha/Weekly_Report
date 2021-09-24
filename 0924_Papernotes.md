@@ -1,3 +1,5 @@
+## Parallel Convolutional-Linear Neural Network for Motor Imagery Classification 
+
 
 
 ---
