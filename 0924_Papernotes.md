@@ -1,4 +1,62 @@
-## Parallel Convolutional-Linear Neural Network for Motor Imagery Classification 
+## Deep Transfer Learning for EEG-based Brain-Computer Interface 
+
+### Problems:
+
+1. Traditional methods do not fully exploit multimodal information. 
+
+2. Large-scale annotated EEG datasets are almost impossible to acquire because biological data acquisition is challenging and quality annotation is costly. 
+
+### Workflow
+
+They convert raw EEG signals into EEG optical flow to represent the multimodal information. 
+
+不太一样
+
+## Inter-subject Deep Transfer Learning for Motor Imagery EEG Decoding 
+
+(标题几乎一模一样woc）
+
+### Objectives: Address **Negative transfer**, i.e., CNNs learning from dissimilar EEG distributions from different subjects causes CNNs to misrepresent each of them instead of learning a richer representation. 
+
+2 strategies:
+
+1. Fine-tuning 
+
+2. To train a shared network using multiple datasets but split deep network layers for different datasets. 
+
+### Main Idea
+
+They design a Separate-Common-Separate Network(SCSN) by separating feature extractor of the baseline CNN for individuals, so each of the subjects has their own temporal layer, spatial layer and mean pooling layer. Each network branch extracts subject-specific features, which could avoid negative transfer in the common feature extractor of the baseline CNN. 
+
+EEG features which reveal brain functionalities could represent in deep layers of the network after several layers of feature extraction. In light of this, the SCSN separate the feature extractors again in deeper layers before the classification layer to handle differences in individual brain functionality. 
+
+They compute MMD for each of the three layers across subjects. 
+
+### Data processing pipeline 
+
+1. They perform a 50 Hz notch filter and a band pass filter between `[1-100]` Hz.
+
+2. They then crop each trial into 2-second trials with an overlap of 1.9 seconds to better fit the real-time setup. 
+
+3. Data split: The target subject's first 120 trials of the second session into the training set. The validation set contains the  `[120, 144]` trials of the target subject's second session. The last 144 trials in the second session form the test set. 
+
+Batch size: 30 
+
+## Convolutional Neural Network-based Transfer Learning and Knowledge Distillation using Multi-subject Data in Motor Imagery BCI
+
+### Workflow
+
+- Extract EEG representations from multiple subjects independently. 
+
+- Uses a deep convolutional neural network to train a model on the multi-subject data
+
+- Transfers the model parameters to train/fine-tune on the new subject's data 
+
+- Utilizes the labels estimated by the transferred model to regularize the training/fine-tuning process. 
+
+**EEG representation**
+
+Input(features): The envelop power, extracted using absolute value of the analytic signal. (FBCSP) 
 
 
 
