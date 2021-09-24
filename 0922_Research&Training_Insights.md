@@ -1,4 +1,50 @@
-时间窗口的长度是怎么设计的？
+### Chap 9
+
+在实际应用中，共享层和迁移层采取不同的学习步长，或者直接冻结共享层。
+
+#### 数据分布自适应
+
+1. Marginal Distribution Adaptation
+
+分类器前一层加入自适应度量（Deep Domain Confusion)。
+
+2. Conditional, Joint and Dynamic Adaptation 
+
+Deep Subdomain Adaptation Network: 通过**基于概率**进行类别匹配的软标签机制展开深度迁移
+
+Joint Adaptation Network: 利用多层网络的张量积，定义了联合概率分布在RKHS（?）中的嵌入表达。
+
+Deep Dynamic Adaptation Network: 
+
+DDAN， DDC， JAN等方法均采取了相同的网络结构信息，通过在**特征层**嵌入动态适配单元。
+
+#### 结构自适应
+
+1. Batch Normalization in Transfer Learning: Adaptive Batch Normalization AdaBN:
+
+先在源域书局上用BN操作，然后在新的领域数据如目标域上，将网络的BN统计量重新计算一遍。
+
+Similar: Automatic Domain Alignment Layers
+
+2. 基于多表示学习的迁移网络结构 （Muti-representation Adaptation Network (MRAN))
+
+大多数领域自适应方法使用但一结构将两个领域的数据提取到同一个特征空间，在该特征空间下使用不同方式衡量两个领域分布的差异，最小化这个分布的差异实现分布对齐。
+
+**但是但一结构提取的特征表示通常只能包含部分信息**,所以只在单一结构提取的特征上作特征对齐也只能关注到部分信息，为了更全面地表示原始数据，需要提取多种表示。
+
+
+#### 知识蒸馏 （Knowledge Distillation)
+
+教师网络 -> 学生网络 
+
+Guan组已经有相应的work了
+
+[Knowledge Distillation on BCI](https://ieeexplore.ieee.org/abstract/document/8008420)
+
+
+
+---
+IV-2a的时间窗口的长度是怎么设计的？
 
 ```
 time_windows_flt = np.array([[2.5, 3.5], [3,4], [3.5,4.5], [4,5], [4.5,5.5], [5,6], [2.5,4.5], [3,5], [3.5,5.5], [4,6], [2.5,6]])*self.fs
@@ -41,9 +87,9 @@ e.g., 知识蒸馏 knowledge distillation
 
 **瓶颈层**：为什么需要瓶颈层？瓶颈层通常是一层网络，其神经元个数少于其接受输入的层，因此瓶颈层往往能获得更为紧致的特征表达，大大提高训练速度。
 
-Q1：源域的大小和目标域的大小怎么平衡？
+**Q1：源域的大小和目标域的大小怎么平衡？** 好像不需要size平衡？
 
-在分类器前一层加入自适应可以达到最好的效果
+Trick 1: 在分类器前一层加入自适应可以达到最好的效果
 
 
 ---
