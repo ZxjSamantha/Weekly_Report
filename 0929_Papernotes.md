@@ -1,3 +1,15 @@
+## Convolutional Neural Network-based Transfer Learning and Knowledge Distillation using Multi-Subject Data in Motor Imagery BCI
+
+Two main approaches: domain adaptation, rule adaptation 
+
+They take a RA-based approach to the problem of classifying motor imagery EEG signals: rather than bringing the data to a common space, they train a neural network model that captures information from multiple subjects and stores the information as the parameters of the network. 
+
+### EEG Representations
+
+Using FBCSP algorithm, they first find the **spatial filters** and **frequency bands** that are contributing to the discriminance between the classes based on the **log-energy** features. 
+
+The results show a significant increase in both small subset calibration in the three cases shown. 
+
 ## Deep Transfer Learning for EEG-based Brain-Computer Interface 
 
 ### Problems:
