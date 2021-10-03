@@ -1,3 +1,7 @@
+## TACNet: Task-aware EEG Classification for Brain-Computer Interface through A Novel Temporal Attention Convolutional Network
+
+Why temporal filter in CNN: However, assuming all input contains the same amount of information, most CNN models apply the same filter structure and parameters uniformly across the input. Therefore, enabling the CNN model to selectively focus on signal slices that contain more task-related information is a feasible solution to the problem of EEG non-stationarity. 
+
 ## Convolutional Neural Network-based Transfer Learning and Knowledge Distillation using Multi-Subject Data in Motor Imagery BCI
 
 Two main approaches: domain adaptation, rule adaptation 
