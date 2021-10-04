@@ -1,6 +1,14 @@
 ## DaNN Experiment Framework 
 
+1. They first compared the DaNN to baselines and other recent domain adaptation methods. 
 
+2. They investigated the effect of the MMD regularization by measuring the difference of the first hidden layer activations between one domain to another domain. 
+
+The DaNN model used in the expriments has only one hidden layer, i.e., a shallow network of 256 hidden nodes. 
+
+Input: raw pixels, SURF features
+
+Output: ten nodes corresponding to the ten classes. 
 
 ## Chap 4 迁移学习方法总览
 
