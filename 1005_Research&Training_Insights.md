@@ -10,6 +10,24 @@ Input: raw pixels, SURF features
 
 Output: ten nodes corresponding to the ten classes. 
 
+The performance of our model was then compared to SVM-based baselines, two existing domain adaptation methods, and a simple neural network as follows: 
+
+1. L-SVM
+
+2. L-SVM + PCA
+
+3. GFK
+
+4. TSC 
+
+5. NN 
+
+### In-domain Setting
+
+In-domain setting, where the training and test samples come from the same domain. The in-domain performance can be considered as a reference that indicates the effectiveness of domain adaptation models in dealing with the domain mismatch. -> 10-fold cross-validation 
+
+
+
 ## Chap 4 迁移学习方法总览
 
 ### 4.1 迁移学习总体思路
