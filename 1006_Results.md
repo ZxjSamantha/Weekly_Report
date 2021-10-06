@@ -1,5 +1,7 @@
 Trialwise-pipeline: (num_epoch = 30)
 
+average: 0.399
+
 | sbj  | train acc | valid acc |
 | ---- | --------- | ----------|
 | sbj01 | 88.1% | 35.2% |
@@ -29,3 +31,10 @@ average: 62.7%
 | 07 | 99.5% | 77.8% |
 | 08 | 100% | 73% |
 | 09 | 100% | 51.1% |
+
+---
+
+Ludovico
+
+average: 0.415
+
