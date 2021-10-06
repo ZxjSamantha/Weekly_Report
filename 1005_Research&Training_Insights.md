@@ -1,3 +1,15 @@
+## EEG-Adapt
+
+subjetc-specific
+
+subject-independent 
+
+subject-adaptive: **Pretrain-Finetune**
+
+In subject-adaptive classification, they fine-tune and adapt a pre-trained model using a small amount of data from the target subject. 
+
+For each subject, the model trained in subject-independent classification serves as a pre-trained model. 
+
 ## DaNN Experiment Framework 
 
 1. They first compared the DaNN to baselines and other recent domain adaptation methods. 
