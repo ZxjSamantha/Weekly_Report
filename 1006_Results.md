@@ -16,6 +16,8 @@ Trialwise-pipeline: (num_epoch = 30)
 
 Cropped-pipeline: (num_epoch = 20)
 
+average: 62.7%
+
 | sbj  | train acc | valid acc |
 | ---- | --------- | ----------|
 | 01 | 100% | 66.7% |
