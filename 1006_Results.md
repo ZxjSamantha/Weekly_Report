@@ -34,7 +34,11 @@ average: 62.7%
 
 ---
 
-Ludovico
+Ludovico-trial (num_epoch = 50)
+
+parameter setting: 
+
+
 
 average: 0.415
 
