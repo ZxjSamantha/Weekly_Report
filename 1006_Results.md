@@ -38,6 +38,15 @@ Ludovico-trial (num_epoch = 50)
 
 parameter setting: 
 
+adjustable: f=10; k=0.6; a=0.3; 
+
+non-adjustable: b=0.2; c=5.7.
+
+| sbj | train acc | valid acc|
+| --- | --- | --- |
+
+
+
 
 
 average: 0.415
