@@ -1,6 +1,6 @@
 Trialwise-pipeline: (num_epoch = 30)
 
-average: 0.399
+**average: 0.399**
 
 | sbj  | train acc | valid acc |
 | ---- | --------- | ----------|
@@ -18,7 +18,7 @@ average: 0.399
 
 Cropped-pipeline: (num_epoch = 20)
 
-average: 62.7%
+**average: 62.7%**
 
 | sbj  | train acc | valid acc |
 | ---- | --------- | ----------|
@@ -35,6 +35,8 @@ average: 62.7%
 ---
 
 Ludovico-trial (num_epoch = 50)
+
+**average: 0.415**
 
 parameter setting: 
 
@@ -54,11 +56,11 @@ non-adjustable: b=0.2; c=5.7.
 | 08 | 93.9% | 51.9% |
 | 09 | 99.5% | 51.1% | 
 
-average: 0.415
-
 ---
 
 cropped-training, batch_size = 16, num_epoch = 30
+
+**average: 0.645**
 
 | sbj | train acc | valid acc |
 | --- | --- | --- |
