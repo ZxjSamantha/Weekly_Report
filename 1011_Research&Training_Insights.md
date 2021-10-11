@@ -2,6 +2,9 @@
 
 [cheatsheet and tricks](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-deep-learning-tips-and-tricks)
 
+- Data processing 
+  - Data augmentation
+
 ### Hyperparameters:
 
 1. 首先调整**Learning rate**
