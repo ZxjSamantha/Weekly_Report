@@ -2,6 +2,8 @@
 
 [cheatsheet and tricks](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-deep-learning-tips-and-tricks)
 
+[PyTorch 损失函数](https://lhyxx.top/2020/02/08/Pytorch%E5%B8%B8%E7%94%A8%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E6%8B%86%E8%A7%A3/)
+
 - Data processing 
   - Data augmentation
   - Batch normalization
