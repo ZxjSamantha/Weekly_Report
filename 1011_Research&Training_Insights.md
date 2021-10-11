@@ -1,3 +1,13 @@
+## Hyperparameters + preprocessing 
+
+### Hyperparameters:
+
+1. 首先调整**Learning rate**
+
+2. 降低Train loss，缩小train loss和Validation loss的差距 
+
+
+
 ## EEG-Adapt
 
 subjetc-specific
