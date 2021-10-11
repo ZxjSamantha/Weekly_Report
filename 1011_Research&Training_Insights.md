@@ -4,6 +4,26 @@
 
 - Data processing 
   - Data augmentation
+  - Batch normalization
+  - 
+
+- Training a neural network 
+- Finding optimal weights
+- Parameter tuning 
+  - weights initilization 
+    - Xavier initialization (Kaiming initialization) 
+    - Transfer Learning 
+      Small: Freeze all layers, trains weights on softmax
+      Medium: Freeze most layers, trains weights on last layers and softmax  
+
+- Optimizing convergence 
+  - Learning rate 
+  - Adaptive learning rates 
+
+- Regularization 
+  - Dropout
+  - Weight regularization 
+  - Early stopping: This regularization techniques stops the training process as soon as the validation loss reaches a plateau or starts to increase. 
 
 ### Hyperparameters:
 
