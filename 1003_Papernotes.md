@@ -1,3 +1,7 @@
+## Parameter Transfer Unit for Deep Neural Networks
+
+Existing works usually heuristically apply parameter-sharing or fine-tuning, and there is no principled approach to learn a parameter transfer strategy. Two popular parameter-based transfer learning methods are *parameter-sharing* and *fine-tuning*. Parameter-sharing assumes that the parameters are highly transferable, and it directly copies the parameters in the 
+
 ## TACNet: Task-aware EEG Classification for Brain-Computer Interface through A Novel Temporal Attention Convolutional Network
 
 Why temporal filter in CNN: However, assuming all input contains the same amount of information, most CNN models apply the same filter structure and parameters uniformly across the input. Therefore, enabling the CNN model to selectively focus on signal slices that contain more task-related information is a feasible solution to the problem of EEG non-stationarity. 
