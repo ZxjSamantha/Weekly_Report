@@ -1,6 +1,12 @@
 ## Parameter Transfer Unit for Deep Neural Networks
 
-Existing works usually heuristically apply parameter-sharing or fine-tuning, and there is no principled approach to learn a parameter transfer strategy. Two popular parameter-based transfer learning methods are *parameter-sharing* and *fine-tuning*. Parameter-sharing assumes that the parameters are highly transferable, and it directly copies the parameters in the 
+Existing works usually heuristically apply parameter-sharing or fine-tuning, and there is no principled approach to learn a parameter transfer strategy. Two popular parameter-based transfer learning methods are *parameter-sharing* and *fine-tuning*. Parameter-sharing assumes that the parameters are highly transferable, and it directly copies the parameters in the source domain network to the target domain network. The fine-tuning method assumes that the parameters in the source domain network ar useful, but they need to be trained with target domain data to better adapt to the target domain. 
+
+### Limitations of parameter-based transfer learning
+
+1. The parameter transferability is mannualy defined as discrete states, usually "random", "fine-tune" and "frozen". But the transferability at a fine-grained scale has not been considered.
+
+2. The parameter transferability differs with domains and network architectures. The hold-out method is rather inefficient because it involves long training time and tremendous computational costs. 
 
 ## TACNet: Task-aware EEG Classification for Brain-Computer Interface through A Novel Temporal Attention Convolutional Network
 
