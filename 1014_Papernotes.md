@@ -1,3 +1,7 @@
+## Deep Domain Confusion: Maximizing for Domain Invariance 
+
+Optimizing for domain invariance can be considered equivalent to the task of learning to predict the class labels while simultaneously finding a representation that makes the domains appear as similar as possible. They learn deep representations by optimizing over a loss which includes both classification error on the labeled data as well as a domain confusion loss which seeks to make the domains indistinguishable. 
+
 ## Parameter Transfer Unit for Deep Neural Networks
 
 Existing works usually heuristically apply parameter-sharing or fine-tuning, and there is no principled approach to learn a parameter transfer strategy. Two popular parameter-based transfer learning methods are *parameter-sharing* and *fine-tuning*. Parameter-sharing assumes that the parameters are highly transferable, and it directly copies the parameters in the source domain network to the target domain network. The fine-tuning method assumes that the parameters in the source domain network ar useful, but they need to be trained with target domain data to better adapt to the target domain. 
