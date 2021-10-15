@@ -1,6 +1,32 @@
+## Adapting Visual Category Models to New Domains
+
+### Experimental Protocols
+
+- Same-category setting:
+- New-category setting: 
+
 ## Deep Domain Confusion: Maximizing for Domain Invariance 
 
 Optimizing for domain invariance can be considered equivalent to the task of learning to predict the class labels while simultaneously finding a representation that makes the domains appear as similar as possible. They learn deep representations by optimizing over a loss which includes both classification error on the labeled data as well as a domain confusion loss which seeks to make the domains indistinguishable. 
+
+Our intuition is that if we can learn a representation that minimizes the distance between the source and target distributions, then we can train a classifier on the source labeled data and directly apply it to the target domain with minimal loss in accuracy. 
+
+To minimize the loss, one approach is to take a fixed CNN, which is already a strong classification representation, and use MMD to decide which layer to use activations from to minimize the domain distribution distance. 
+
+1. Take a network that was trained to minimize $lambda_C$ 
+
+2. Select the representation that minimizes MMD 
+
+3. Use that representation to minimize $lambda_C$. 
+
+*bottleneck* -> adaptation layer 
+
+Our intutition is that a lower dimensional layer can be used to regularize the training of the source classifier and prevent overfitting to the particular nuances of the source distribution. 
+
+There are two model selection choices that must be made to add the adaptation layer and the domain distance loss. We must choose *where in the network to place the adaptation layer*(solved by using MMD) and *choose the dimension of the layer*(solved by grid search) 
+
+Both the selection of *which layers's representation to use(depth)* and *how large the adaptation layer should be(width)* are guided by MMD. **what do these representation mean in eeg data?**
+
 
 ## Parameter Transfer Unit for Deep Neural Networks
 
