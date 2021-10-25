@@ -1,3 +1,7 @@
+[GNN Introduction](https://distill.pub/2021/gnn-intro/)
+
+---
+
 ## Adapting Visual Category Models to New Domains
 
 ### Experimental Protocols
