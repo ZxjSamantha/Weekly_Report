@@ -1,3 +1,13 @@
+## References
+
+[SCNN](https://github.com/SPOClab-ca/SCNN)
+
+[ECE](https://github.com/krishk97/ECE-C247-EEG-GAN)
+
+Preprocessing 快解决了
+
+Training 封装好了
+
 ## Hyperparameters + preprocessing 
 
 [cheatsheet and tricks](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-deep-learning-tips-and-tricks)
