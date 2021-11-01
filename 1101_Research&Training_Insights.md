@@ -39,9 +39,25 @@ Training 封装好了
 
 ### Hyperparameters:
 
-1. 首先调整**Learning rate**
+1. model 
 
-2. 降低Train loss，缩小train loss和Validation loss的差距 
+2. batchsize
+
+3. n_epochs
+
+4. src 
+
+5. tar 
+
+6. n_class
+
+7. learning rate 
+
+8. momentum 
+
+9. decay 
+
+10. early stop 
 
 
 
