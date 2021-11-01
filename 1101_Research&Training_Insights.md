@@ -1,3 +1,18 @@
+## Chap 6 统计特征变换迁移法（就是MMD啦！）
+
+Maximum Mean Discrepancy: 求两个概率分布映射到另一个空间中的数据的均值之差
+
+给定不同的核函数，就可以算出不同的MMD -> Mutiple-Kernel MMD 
+
+基于MMD 进行迁移学习方法的步骤如下：$$A^TXMX^TA$$
+
+1. 输入两个特征矩阵，首先用一个初始的简单分类器（如KNN）计算目标域的伪标签。
+
+2. 随后计算M和H矩阵，然后选择一些常用的核函数进行映射计算K，接着求解公式中的A，取其前m个特征值。
+
+3. 得到源域和目标域降维后的数据，可多次迭代。
+
+
 ## References
 
 [SCNN](https://github.com/SPOClab-ca/SCNN)
