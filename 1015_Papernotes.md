@@ -1,3 +1,15 @@
+## BENDR: Using transformers and a contrastive self-supervised learning task to learn from massive amounts of EEG data 
+
+They are unaware of any prior work assessing transformer-based DNNs with EEG data. 
+
+This is in the interest of diversifying the investigations into successful transfer learning schemes for DNNs applied to BCI and EEG. 
+
+While previous approaches fashioned DNN transfer learning after ImageNet pre-training, they find this approach inadequate as there is limited applicable data availability and it is questionably analogous to its forebear. 
+
+---
+
+They consider how to adapt techniques and architectures used for **language modeling(LM)**, that appear capable of ingesting awesome amounts of data, towards the development of encephalography modeling (EM) with DNNs in the same vein. 
+
 [GNN Introduction](https://distill.pub/2021/gnn-intro/)
 
 ---
