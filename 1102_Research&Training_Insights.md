@@ -1,3 +1,29 @@
+## EEG-Adapt
+
+subjetc-specific
+
+subject-independent 
+
+subject-adaptive: **Pretrain-Finetune**. In subject-adaptive classification, they fine-tune and adapt a pre-trained model using a small amount of data from the target subject. 
+
+For each target subject, the model trained in subject-independent classification serves as a pre-trained model. 
+
+**In subject-adaptive classification, they fine-tune and adapt a pre-trained model using a small amount of data from the target subject. **
+
+Scheme 1: adapt the fully-connected layer, leaving the parameters for the feature extractor unchanged. 
+
+**Learning rate scheduling in adaptation**
+
+In these schemes, since the adaptation data is small comparing to the data to train the subject-independent model, we need to tune down the learning rate to avoid cloberring the initialization. 
+
+Original learning rate in the base model be $/eta$, and let $/alpha$ be the coefficient that scales down the learning rate. 
+
+The equation above showed that scaling down the learning rate can be viewed as accepting only $/alpha$ portion of the new parameters. 
+
+In the following sections, an adaptation scheme is defined as optimizing a subset of $/theta$ for f. The adaptation rate is defined as the percentage of available adaptation data used in each scheme, which ranges from 10% to 100% in steps of 10%. An adaptation configuration is a combination of an adaptation scheme. 
+
+
+
 ## Chap 6 统计特征变换迁移法（就是MMD啦！）
 
 Maximum Mean Discrepancy: 求两个概率分布映射到另一个空间中的数据的均值之差
@@ -85,20 +111,6 @@ Training 封装好了
 9. decay 
 
 10. early stop 
-
-
-
-## EEG-Adapt
-
-subjetc-specific
-
-subject-independent 
-
-subject-adaptive: **Pretrain-Finetune**
-
-In subject-adaptive classification, they fine-tune and adapt a pre-trained model using a small amount of data from the target subject. 
-
-For each subject, the model trained in subject-independent classification serves as a pre-trained model. 
 
 ## DaNN Experiment Framework 
 
