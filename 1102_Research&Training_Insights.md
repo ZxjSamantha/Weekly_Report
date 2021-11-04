@@ -4,9 +4,9 @@ For the SMR dataset, the data is partitioned as follows: For each subject,
 
 select the **training data** from 5 other subjects at random to be the **training set**, 
 
-and the **training data** from the remaining 3 subjects to be the validation set.  
+and the **training data** from the remaining 3 subjects to be the **validation set**.  
 
-The **test set** remains the same as the original test set for the competition. 
+The **test set** remains the same as the original **test set** for the competition. 
 
 This enforces a fully cross-subject classification analysis as we never use the test subjects' training data. 
 
