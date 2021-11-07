@@ -1,3 +1,13 @@
+## Chap 8
+
+预训练方法：首先在大数据集上训练得到一个具有强泛化能力（how to specify this）的模型（预训练模型），然后在下游任务上进行微调的过程。
+
+深度迁移学习方法：在预训练的基础上，设计更好的网络结构，损失函数等，从而更好地迁移。
+
+
+一种被广泛接受的解释如下：对于神经网络而言，其浅层负责学习general features, 其深层则负责学习与任务相关的specific features. 随着层次的加深，网络渐渐从通用特征过渡到特殊特征的学习表征。这意味着，如果能准确地指导一个网络中哪些层负责学习通用的特征，哪些层负责学习特殊的特征，那么就能更清晰地利用这些层来进行迁移学习。
+
+
 ## BENDR: Using transformers and a contrastive self-supervised learning task to learn from massive amounts of EEG data 
 
 They are unaware of any prior work assessing transformer-based DNNs with EEG data. 
