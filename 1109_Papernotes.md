@@ -38,11 +38,15 @@ Five of the nine subjects with highest data quality (subject 01, 03, 07, 08, 09)
 
 For the BCICIV2a dataset, they simulate the calibration period in real-world BCI by including **the target subject's first 120 trials of the second session into the training set**. 
 
+**The training set consists of the first session of all five subejcts as well as the target subject's first 120 trials of the second session. **
+
 **The validation set contains the  `[120, 144]` trials of the target subject's second session.** 
 
 **The last 144 trials in the second session form the test set. **
 
 Batch size: 30 
+
+Finally, comparing SCSN and SCSN-MMD, they did not observe an obvious increase in decoding accuracies by adding MMD constraints to our multi-subject networks. 
 
 ---
 
