@@ -30,6 +30,8 @@ They also match samples with the same label when they compute MMD. This ensures 
 
 Five of the nine subjects with highest data quality (subject 01, 03, 07, 08, 09) are selected from the dataset. 
 
+**In my case, subejct 01, 03, 05, 07, 08**
+
 1. They perform a 50 Hz notch filter and a band pass filter between `[1-100]` Hz.
 
 2. They then crop each trial into 2-second trials with an overlap of 1.9 seconds to better fit the real-time setup. 
