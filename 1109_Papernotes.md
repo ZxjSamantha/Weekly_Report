@@ -1,3 +1,51 @@
+## Inter-subject Deep Transfer Learning for Motor Imagery EEG Decoding 
+
+(标题几乎一模一样woc）
+
+### Objectives: Address **Negative transfer**, i.e., CNNs learning from dissimilar EEG distributions from different subjects causes CNNs to misrepresent each of them instead of learning a richer representation. 
+
+They proposed a multi-branch deep transfer network, the Separate-Common-Separate Network (SCSN) based on splitting the network's feature extractors for individual subjects. 
+
+### Results: SCSN(81.8%m 53.2%) and SCSN-MMD(81.8%, 54.8%), CNN(73.4%, 48.8%). 
+
+2 strategies:
+
+1. Fine-tuning 
+
+2. To train a shared network using multiple datasets but split deep network layers for different datasets. 
+
+### Main Idea
+
+To address negative transfer problem: 
+
+They design a Separate-Common-Separate Network(SCSN) by separating feature extractor of the baseline CNN for individuals, so **each of the subjects has their own temporal layer, spatial layer and mean pooling layer**.(Feature extraction for each subject?) Each network branch extracts subject-specific features, which could avoid negative transfer in the common feature extractor of the baseline CNN. 
+
+Maximum-mean discrepancy (MMD) is a metric which meaures the distance between two datasets in kernel sapce. They compute MMD between the target and each source subject in the separate deep feature extractors and add it into the loss function. 
+
+They compute MMD for each of the three layers across subjects. The $(MMD_i)^2$ loss is a weighted average MMD of each of the three layers. Their averaging weights are 1/6, 1/3, 1/2 respectively; this is to increase the significance of deeper layers. 
+
+They also match samples with the same label when they compute MMD. This ensures the MMD loss represents the distributional distance between data with the same label from different subjects. 
+
+### Data processing pipeline 
+
+Five of the nine subjects with highest data quality (subject 01, 03, 07, 08, 09) are selected from the dataset. 
+
+1. They perform a 50 Hz notch filter and a band pass filter between `[1-100]` Hz.
+
+2. They then crop each trial into 2-second trials with an overlap of 1.9 seconds to better fit the real-time setup. 
+
+3. Data split: 
+
+For the BCICIV2a dataset, they simulate the calibration period in real-world BCI by including **the target subject's first 120 trials of the second session into the training set**. 
+
+**The validation set contains the  `[120, 144]` trials of the target subject's second session.** 
+
+**The last 144 trials in the second session form the test set. **
+
+Batch size: 30 
+
+---
+
 ## Chap 8
 
 预训练方法：首先在大数据集上训练得到一个具有强泛化能力（how to specify this）的模型（预训练模型），然后在下游任务上进行微调的过程。
@@ -93,36 +141,6 @@ The results show a significant increase in both small subset calibration in the 
 They convert raw EEG signals into EEG optical flow to represent the multimodal information. 
 
 不太一样
-
-## Inter-subject Deep Transfer Learning for Motor Imagery EEG Decoding 
-
-(标题几乎一模一样woc）
-
-### Objectives: Address **Negative transfer**, i.e., CNNs learning from dissimilar EEG distributions from different subjects causes CNNs to misrepresent each of them instead of learning a richer representation. 
-
-2 strategies:
-
-1. Fine-tuning 
-
-2. To train a shared network using multiple datasets but split deep network layers for different datasets. 
-
-### Main Idea
-
-They design a Separate-Common-Separate Network(SCSN) by separating feature extractor of the baseline CNN for individuals, so each of the subjects has their own temporal layer, spatial layer and mean pooling layer. Each network branch extracts subject-specific features, which could avoid negative transfer in the common feature extractor of the baseline CNN. 
-
-EEG features which reveal brain functionalities could represent in deep layers of the network after several layers of feature extraction. In light of this, the SCSN separate the feature extractors again in deeper layers before the classification layer to handle differences in individual brain functionality. 
-
-They compute MMD for each of the three layers across subjects. 
-
-### Data processing pipeline 
-
-1. They perform a 50 Hz notch filter and a band pass filter between `[1-100]` Hz.
-
-2. They then crop each trial into 2-second trials with an overlap of 1.9 seconds to better fit the real-time setup. 
-
-3. Data split: The target subject's first 120 trials of the second session into the training set. The validation set contains the  `[120, 144]` trials of the target subject's second session. The last 144 trials in the second session form the test set. 
-
-Batch size: 30 
 
 ## Convolutional Neural Network-based Transfer Learning and Knowledge Distillation using Multi-subject Data in Motor Imagery BCI
 
