@@ -1,4 +1,6 @@
-## Setting learning rate 
+## Setting learning rate & Learning rate scheduling 
+
+[Cosine Annealing](https://zhuanlan.zhihu.com/p/332766013)
 
 [](https://www.jiqizhixin.com/articles/nn-learning-rate)
 
