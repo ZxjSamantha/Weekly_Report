@@ -1,3 +1,7 @@
+## Setting learning rate 
+
+[](https://www.jiqizhixin.com/articles/nn-learning-rate)
+
 ## Data processing pipeline (Inter-subject Training)
 
 Five of the nine subjects with **highest data quality (subject 01, 03, 07, 08, 09)** are selected from the dataset. 
