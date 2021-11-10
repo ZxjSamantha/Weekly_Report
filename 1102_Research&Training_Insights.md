@@ -1,3 +1,25 @@
+## Data processing pipeline (Inter-subject Training)
+
+Five of the nine subjects with **highest data quality (subject 01, 03, 07, 08, 09)** are selected from the dataset. 
+
+**In my case, subejct 01, 03, 05, 07, 08**
+
+1. They perform a 50 Hz notch filter and a band pass filter between `[1-100]` Hz.
+
+2. They then crop each trial into 2-second trials with an overlap of 1.9 seconds to better fit the real-time setup. 
+
+3. Data split: 
+
+For the BCICIV2a dataset, they simulate the calibration period in real-world BCI by including **the target subject's first 120 trials of the second session into the training set**. 
+
+**The training set consists of the first session of all five subejcts as well as the target subject's first 120 trials of the second session. **
+
+**The validation set contains the  `[120, 144]` trials of the target subject's second session.** 
+
+**The last 144 trials in the second session form the test set. **
+
+Batch size: 30 
+
 ## Cross-subject data partition
 
 For the SMR dataset, the data is partitioned as follows: For each subject, 
