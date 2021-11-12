@@ -1,3 +1,5 @@
+# 2021/11/12 Preprocessing done! 
+
 Trialwise-pipeline: (num_epoch = 30)
 
 **average: 0.399**
