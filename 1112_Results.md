@@ -1,5 +1,7 @@
 # 2021/11/12 Preprocessing done! 
 
+Training accuracy 很好，但是 valid不行
+
 Trialwise-pipeline: (num_epoch = 30)
 
 **average: 0.399**
