@@ -1,3 +1,15 @@
+## BENDR: Using transformers and a contrastive self-supervised learning task to learn from massive amounts of EEG data 
+
+**Problem**: DNNs are used to learn general features and these features could be fine-tuned to specific contexts. 
+
+**Insights**: Adapt techniques and architectures used for **Language Modelling (LM)** towards the development of **encephalography modelling (EM)** with DNNs.  
+
+They are unaware of any prior work assessing transformer-based DNNs with EEG data. 
+
+This is in the interest of diversifying the investigations into successful transfer learning schemes for DNNs applied to BCI and EEG. 
+
+While previous approaches fashioned DNN transfer learning after ImageNet pre-training, they find this approach inadequate as there is limited applicable data availability and it is questionably analogous to its forebear. 
+
 ## Inter-subject Deep Transfer Learning for Motor Imagery EEG Decoding 
 
 (标题几乎一模一样woc）
@@ -60,15 +72,6 @@ Finally, comparing SCSN and SCSN-MMD, they did not observe an obvious increase i
 
 
 一种被广泛接受的解释如下：对于神经网络而言，其浅层负责学习general features, 其深层则负责学习与任务相关的specific features. 随着层次的加深，网络渐渐从通用特征过渡到特殊特征的学习表征。这意味着，如果能准确地指导一个网络中哪些层负责学习通用的特征，哪些层负责学习特殊的特征，那么就能更清晰地利用这些层来进行迁移学习。
-
-
-## BENDR: Using transformers and a contrastive self-supervised learning task to learn from massive amounts of EEG data 
-
-They are unaware of any prior work assessing transformer-based DNNs with EEG data. 
-
-This is in the interest of diversifying the investigations into successful transfer learning schemes for DNNs applied to BCI and EEG. 
-
-While previous approaches fashioned DNN transfer learning after ImageNet pre-training, they find this approach inadequate as there is limited applicable data availability and it is questionably analogous to its forebear. 
 
 ---
 
