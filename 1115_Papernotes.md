@@ -1,8 +1,20 @@
 ## BENDR: Using transformers and a contrastive self-supervised learning task to learn from massive amounts of EEG data 
 
-**Problem**: DNNs are used to learn general features and these features could be fine-tuned to specific contexts. 
+**Problem**: 
 
-**Insights**: Adapt techniques and architectures used for **Language Modelling (LM)** towards the development of **encephalography modelling (EM)** with DNNs.  
+DNNs are used to learn general features and these features could be fine-tuned to specific contexts. 
+
+In other words, unlike domains such as computer vision where there is clearer understanding that nearly all DNNs tend to learn "low-level" features in earlier laters (e.g., edge-detector-like primitives), there is no such understanding with DNNs used to process raw EEG. There are no known transferable DNN properties or operations that are easily extended to any subject, session, or task. 
+
+**Insights**: 
+
+With these shallower networks, the range of learnable features is relatively limited. Their inability to uniformly outperform feature-engineering approaches indicate that these limited features are not entirely sufficient, and more importantly, they may not always be desirable in a DNN approach. 
+
+More complex raw-BCI-trial features could be developed using DNNs with sufficient data, notably such that these data provide a reasonable empirical estimate of the data distribution in question. 
+
+**Proposed Methods**:
+
+Adapt techniques and architectures used for **Language Modelling (LM)** towards the development of **encephalography modelling (EM)** with DNNs.  
 
 They are unaware of any prior work assessing transformer-based DNNs with EEG data. 
 
