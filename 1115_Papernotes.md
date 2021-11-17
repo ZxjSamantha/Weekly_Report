@@ -12,15 +12,18 @@ With these shallower networks, the range of learnable features is relatively lim
 
 More complex raw-BCI-trial features could be developed using DNNs with sufficient data, notably such that these data provide a reasonable empirical estimate of the data distribution in question. 
 
+**Important question**:
+
+How best to construct such an EM, so that it learns features that are general enough while remaining usable for any analysis task? VS **Constrastive learning**
+
 **Proposed Methods**:
 
-Adapt techniques and architectures used for **Language Modelling (LM)** towards the development of **encephalography modelling (EM)** with DNNs.  
+They argue that self-supervised sequence learning would be an effective approach for developing and deploying more complex DNNs in BCI, as it can learn from many more people, sessions, and taks using unlabelled data. 
 
-They are unaware of any prior work assessing transformer-based DNNs with EEG data. 
+They adapt techniques and architectures used for **Language Modelling (LM)** towards the development of **encephalography modelling (EM)** with DNNs.  
 
-This is in the interest of diversifying the investigations into successful transfer learning schemes for DNNs applied to BCI and EEG. 
-
-While previous approaches fashioned DNN transfer learning after ImageNet pre-training, they find this approach inadequate as there is limited applicable data availability and it is questionably analogous to its forebear. 
+With this framework, arbitrart EEG segments are encoded as a sequence of learned feature vectors we call BErt-inspired Neural Data Representations (BENDR). 
+ 
 
 ## Inter-subject Deep Transfer Learning for Motor Imagery EEG Decoding 
 
