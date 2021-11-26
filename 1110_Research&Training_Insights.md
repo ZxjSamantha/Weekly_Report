@@ -1,3 +1,5 @@
+## BCICIV2a 实验流程，PhysioNet，参考实验流程
+
 ## Setting learning rate & Learning rate scheduling 
 
 [Cosine Annealing](https://zhuanlan.zhihu.com/p/332766013)
