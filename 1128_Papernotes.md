@@ -16,15 +16,6 @@ More complex raw-BCI-trial features could be developed using DNNs with sufficien
 
 How best to construct such an EM, so that it learns features that are general enough while remaining usable for any analysis task? VS **Constrastive learning**
 
-**Proposed Methods**:
-
-They argue that self-supervised sequence learning would be an effective approach for developing and deploying more complex DNNs in BCI, as it can learn from many more people, sessions, and taks using unlabelled data. 
-
-They adapt techniques and architectures used for **Language Modelling (LM)** towards the development of **encephalography modelling (EM)** with DNNs.  
-
-With this framework, arbitrart EEG segments are encoded as a sequence of learned feature vectors we call BErt-inspired Neural Data Representations (BENDR). 
- 
-
 ## Inter-subject Deep Transfer Learning for Motor Imagery EEG Decoding 
 
 (标题几乎一模一样woc）
@@ -186,7 +177,8 @@ Input(features): The envelop power, extracted using absolute value of the analyt
 
 ---
 
-`Conventional machine learning algorithms are composed of three steps: signal pre-processing, feature extraction, feature classification. 
+`
+Conventional machine learning algorithms are composed of three steps: signal pre-processing, feature extraction, feature classification. 
 
 The signal pre-processing step's objective is to remove artifacts such as musclocular movement and system noises. 
 
@@ -236,16 +228,6 @@ deepConvNets学到的features和FBCSP不一样（可视化每层学到的特征�
 
 The possible reasons that ConvNets failed to clearly outperform FBCSP:
 
-1. The datasets might still not be large enough to reveal the full potential of deeper convolutional networks in EEG decoding. -> **How to address: increase the size or use transfer learning**
-
-2. The class-discriminative features might not have enough hierarchical structure which deeper ConvNets could exploit. 
-
-Solutions:
-
-1. Recurent networks could exploit signal changes that happen on longer timescales, e.g., **electrodes slowly losing scalp contact over course of a session**, changes of the electrode cap position or nonstationarities in the brain signals.
-
-2. Advances in DL: newer forms of hyperparameter optimization. 
-
 ### Potential advantages of ConvNets for brain-signal decoding
 
 ```
@@ -255,18 +237,11 @@ Besides the decoding performance, there are also other potential advantages of u
 
 2. Due to the iterative training of ConvNets, they have a natural way of pretraining and finetuning; for example a ConvNet can be pretrained on data from the past or data from other subjects and then be finetuned with new data from a new subject. 
 
-3. Due to their joint optimization, single ConvNets can be building blocks for more sophisticated setups of multiple ConvNets. 
 
 ```
-
-training -> cross training strategies -> finetune (finetune strategies) 
 
 ### Cropped training effect on accuracies
 
 `Cropped training was necessary for the deep ConvNet to reach competitive accuracies on the dataset excluding very low frequencies. The large increase in accuracy with cropped training for the deep network on the data might indicate a large number of training examples is necessary to learn to extract band power features. This makes sense as the shifted neighboring windows may contain the same, but shifted, oscillatory signals. These shifts could prevent the network from overfitting on phase information within the trial, which is less important in the higher than the lower frequencies. `
-
-### Visualize what ConvNets learn from the EEG data. 
-
-`The literature on using ConvNets for brain-signal decoding has visualized weights or outputs of ConvNet layers determined inputs that maximally activate specific convolutional filters. `
 
 
