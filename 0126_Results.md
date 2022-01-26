@@ -4,6 +4,13 @@
 
 [迁移学习技巧](https://blog.csdn.net/u014381600/article/details/71511794)
 
+## 图像识别：
+
+从头开始：1e-3, fine-tune: 1e-5
+
+## EEG：
+从头开始：1e-2, fine-tune: 1e-4
+
 # 2022/01/21 finetune (数据未修改）
 
 | sbj  | train acc | valid acc | test acc | 
