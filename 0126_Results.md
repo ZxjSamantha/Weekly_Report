@@ -1,3 +1,9 @@
+# 2022/01/26 fine-tune 的学习率怎么修改
+
+[cs231n](https://cs231n.github.io/transfer-learning/)
+
+[迁移学习技巧](https://blog.csdn.net/u014381600/article/details/71511794)
+
 # 2022/01/21 finetune (数据未修改）
 
 | sbj  | train acc | valid acc | test acc | 
